@@ -1,5 +1,8 @@
 import React from "react";
 
+// import {BsGlobe2,BsGraphUpArrow} from 'react-icons/bs'
+// import {FcPhoneAndroid} from 'react-icons/fc'
+
 import "./Navbar.css";
 import { useState } from "react";
 
@@ -52,19 +55,24 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="container" id='Home'>
-        <h1>Home</h1>
+
+        {/* <div className="type-effect">
+          <ul className="dynamic-txts">
+            <li><span>Front-end Developer</span></li>
+            <BsGlobe2/> <FcPhoneAndroid/> <BsGraphUpArrow/>
+            <li><span>Django Developer</span></li>
+            <li><span>Just getting started</span></li>
+            <BsGraphUpArrow/>
+            
+
+          </ul>
+        </div> */}
+
       </div>
-      <div className="container" id='Skills'>
-        <h1>Skills</h1>
-      </div>
-      <div className="container" id='Projects'>
-        <h1>Projects</h1>
-      </div>
-      <div className="container" id='About'>
-        <h1>About</h1>
-      </div>
-    </div>
+
+
+
+    
   );
 };
 
