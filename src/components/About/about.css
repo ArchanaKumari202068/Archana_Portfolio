@@ -1,0 +1,20 @@
+main-about-container
+.para {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+
+}
+/* .para p {
+
+   
+
+} */
+.about_img{
+    
+    align-items: center;
+    margin: 500px;
+}

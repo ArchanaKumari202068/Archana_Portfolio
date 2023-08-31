@@ -1,23 +1,66 @@
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  .greeting_name h1{
-    font-size: 5.6rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 350;
-    margin: 0;
-    line-height: 110px;
-    display: block;
-    padding: 7.5rem 7.5rem 0rem 7.5rem;
-  }
-.typingeffect{
-    height: 15vh;
-    width: 100%;
-  }
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  border: 2px solid rgb(240, 158, 42);
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Home_container {
+  /* display: flex; */
+  height: 50%;
+  width: 70%;
+}
+
+.main_class {
+  display: flex;
+}
+
+.greeting_name h1 {
+  font-size: 5.6rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 350;
+  margin: 0;
+  line-height: 110px;
+  display: block;
+  padding: 7.5rem 7.5rem 0rem 7.5rem;
+}
+
+.typingeffect {
+  height: 15vh;
+  width: 100%;
+  position: absolute;
+}
+
 .typingeffect .typo {
-    margin-top: 10px;
-    font-size: 25px;
-    font-weight: 400;
-    margin-left: 150px;
-  }
+
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 150px;
+}
+
+
+
+
+.contact-icons {
+  width: 20%;
+  margin: 90px;
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-icons i:nth-child(1) {
+  color: rgb(10, 102, 194)
+}
+
+.contact-icons i:nth-child(2) {
+  color: black;
+
+}

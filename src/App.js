@@ -14,9 +14,10 @@ function App() {
       <Navbar />
       
       <Home />
-      <About />
+      
       <Project />
       <Skill />
+      <About />
     </div>
   );
 }
