@@ -44,9 +44,6 @@ html {
   margin-left: 150px;
 }
 
-
-
-
 .contact-icons {
   width: 20%;
   margin: 90px;
@@ -63,4 +60,18 @@ html {
 .contact-icons i:nth-child(2) {
   color: black;
 
+}
+
+.left-element {
+  transform: translateX(-200px);
+  opacity: 0;
+}
+.right-element {
+  transform: translateX(200px);
+  opacity: 0;
+}
+.i-am-visible {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: 2s;
 }

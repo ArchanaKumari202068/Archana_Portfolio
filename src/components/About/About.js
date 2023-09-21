@@ -3,13 +3,14 @@ import myImage from "../assest/profile_pic.jpg";
 import Imagecontainer from "../../comman/imagecontainer";
 import { SiGmail } from "react-icons/si";
 import "./about.css";
-
+import { useInView } from "react-intersection-observer";
 const About = () => {
+  const {ref:myRef,inView:isMyElementInView}=useInView();
   const GmailStyle = { color: "Red" };
   return (
     <div className="container" id="About">
-      <div className="main-about-container">
-        <div className="para">
+      <div className="main-about-container" ref={myRef}>
+        <div className= {`para ${isMyElementInView ?"i-am-visible":'left-element'}`}>
           <h1>About me</h1>
           <p>
             I am a full-stack web developer, pursuing my B.Tech in Computer
@@ -19,7 +20,7 @@ const About = () => {
             things of modern technical world.
           </p>
         </div>
-        <div className="about_section"></div>
+        <div className="about_section">
           <div className="about_img">
             <Imagecontainer src={myImage} alt="archana" />
 
@@ -27,13 +28,14 @@ const About = () => {
           <div className="about-icons">
               <i class="fab fa-linkedin"></i>
               <i class="fa-brands fa-square-github"></i>
-              <SiGmail style={GmailStyle} />
+              <i><SiGmail style={GmailStyle} /></i>
               {/* <FaLinkgedin />
               <FaGithubSquare />
             */}
-            </div>
+          </div>
+        </div>  
 
-        <div contact_icons></div>
+        {/* <div contact_icons></div> */}
       </div>
     </div>
   );

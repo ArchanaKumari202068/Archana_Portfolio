@@ -5,17 +5,20 @@ import TypingEffect from "../Typeeffect/Typeeffect";
 import "../Home/Home.css";
 import myImage from "../assest/profile_pic.jpg";
 import Imagecontainer from "../../comman/imagecontainer";
+import { useInView } from "react-intersection-observer";
+
 // import ImageComponent from '/ImageComponent'
 
 const Home = () => {
+  const {ref:myRef,inView:isMyElementInView}=useInView();
   // const ImageComponent=(src,alt) => {
   //     return <img src={myImage} alt="Archana Kumari" />
   // }
   const GmailStyle = { color: "Red" };
   return (
-    <div className="container" id="Home">
-      <div className="main_class">
-        <div className="Home_container">
+    <div className="container" id="Home" >
+      <div className="main_class" ref={myRef}>
+        <div className={`Home_container ${isMyElementInView ?"i-am-visible":'left-element'}`}>
           <div className="greeting_name">
             <h1>
               Hi,I'm
@@ -48,6 +51,7 @@ const Home = () => {
 
     </div> */}
         </div>
+      
         <Imagecontainer src={myImage} alt="archana" />
       </div>
     </div>

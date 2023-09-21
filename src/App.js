@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Project from './components/Project/Project';
 import Skill from './components/Skill/Skill';
 
+
 function App() {
   return (
     <div className='app'>
@@ -16,6 +17,7 @@ function App() {
       <Home />
       
       <Project />
+
       <Skill />
       <About />
     </div>
