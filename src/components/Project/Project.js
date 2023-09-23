@@ -1,5 +1,6 @@
 import React from "react";
 import "./Project.css";
+
 // import ReactDOM from 'react-dom';
 import ProjectCards from "./ProjectsCards";
 
@@ -10,7 +11,7 @@ function Project() {
         <div className="Project-heading">
           <h1>Projects</h1>
         </div>
-        <div className="Cards">
+        <div className="Cards" >
           <ProjectCards title="Title 1" imgsrc="https://picsum.photos/400/300"/>
           <ProjectCards title="Title 2" imgsrc="https://picsum.photos/400/300" />
           <ProjectCards title="Title 1" imgsrc="https://picsum.photos/400/300"/>

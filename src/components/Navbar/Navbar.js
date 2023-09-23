@@ -1,5 +1,5 @@
 import React from "react";
-
+import myResume from "../assest/Archana-Resume.pdf"
 // import {BsGlobe2,BsGraphUpArrow} from 'react-icons/bs'
 // import {FcPhoneAndroid} from 'react-icons/fc'
 
@@ -12,6 +12,15 @@ const Navbar = () => {
     // console.log("x is visible");
     setBars(!bars);
   };
+const downloadButton = document.getElementById('downloadButton');
+
+//  if (downloadButton) {downloadButton.addEventListener('click', () => {
+//   const link = document.createElement('a');
+//   link.href = 'Archana-Resume.pdf';
+//   link.download = 'Archana_Resume.pdf';
+//   link.click();
+//   link.setAttribute('webkitdirectory', '');
+// });}
   // const handleOChange = ()=>{
 
   // }
@@ -43,7 +52,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="resume">
-          <button className="resume_button">Resume</button>
+          <button className="resume_button" id="downloadButton">
+            <a href={myResume}>
+
+            Resume
+            </a>
+            </button>
         </div>
         <div id="mobile">
           <div className="bars" onClick={handleOnClick}>
@@ -56,23 +70,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-        {/* <div className="type-effect">
-          <ul className="dynamic-txts">
-            <li><span>Front-end Developer</span></li>
-            <BsGlobe2/> <FcPhoneAndroid/> <BsGraphUpArrow/>
-            <li><span>Django Developer</span></li>
-            <li><span>Just getting started</span></li>
-            <BsGraphUpArrow/>
-            
-
-          </ul>
-        </div> */}
-
       </div>
-
-
-
-    
+       
   );
 };
 

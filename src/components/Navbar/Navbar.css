@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1b2430;
+    background-image: linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgb(108, 203, 176) 91.1% );
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
 }
 .menu-link{
@@ -25,7 +25,7 @@
 }
 .menu-link li a:hover,
 .menu-link li a:active{
-    color:#17cf97;
+    color:#0d0f0e;
 }
 .menu-link li a:hover::after,
 .menu-link li a:active::after
@@ -33,7 +33,7 @@
     content: '';
     width: 30%;
     height: 2px;
-    background: #17cf97;
+    background: #1d1f1e;
     position:absolute;
     bottom:-4px;
     left:20px;
@@ -49,6 +49,11 @@
     border-radius: 5px;
     background-color: #fff;
     color: black;
+    /* background-color: #e9d7e9;
+background-image: linear-gradient(0deg, #e9d7e9 0%, #bae7e7 100%); */
+background-color: #e9d7e9;
+background-image: linear-gradient(0deg, #e9d7e9 0%, #bae7e7 100%);
+
     border: none;
     cursor: pointer;
 
@@ -58,11 +63,11 @@
 }
 .resume .resume_button:hover{
    
-    color: white;
-    background: #17cf97;
+  background-image: linear-gradient( 90.1deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 99.9% );
 
+  /* 
     box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-   
+    */
 
 }
 #mobile i{

@@ -25,7 +25,7 @@ const About = () => {
             <Imagecontainer src={myImage} alt="archana" />
 
           </div>
-          <div className="about-icons">
+          <div className= {`about-icons ${isMyElementInView ?"i-am-visible":'right-element'}`}>
               <i class="fab fa-linkedin"></i>
               <i class="fa-brands fa-square-github"></i>
               <i><SiGmail style={GmailStyle} /></i>
