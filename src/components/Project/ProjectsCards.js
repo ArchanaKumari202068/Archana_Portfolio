@@ -32,7 +32,7 @@ const ProjectCards = (props) => {
   };
 
   return (
-    <div className="main_project_container" ref={myRef}>
+    <div className="main_project_container" >
       <div className={`card-container`}>
         <div className="Card">
           <img src={props.imgsrc} alt="Project_img" className="Project_img" />
