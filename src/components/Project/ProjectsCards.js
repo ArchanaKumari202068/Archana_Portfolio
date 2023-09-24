@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+
 // import ProjectDetails from "./ProjectDetails";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
