@@ -26,9 +26,9 @@ const About = () => {
 
           </div>
           <div className= {`about-icons ${isMyElementInView ?"i-am-visible":'right-element'}`}>
-              <i class="fab fa-linkedin"></i>
-              <i class="fa-brands fa-square-github"></i>
-              <i><SiGmail style={GmailStyle} /></i>
+          <a href="https://www.linkedin.com/in/archana-kumari-66a233239/"><i class="fab fa-linkedin"></i> </a>
+            <a href="https://github.com/ArchanaKumari202068"><i class="fa-brands fa-square-github"></i></a> 
+            <a href="archanakumari202068@gmail.com" ><i><SiGmail style={GmailStyle} /></i></a>
               {/* <FaLinkgedin />
               <FaGithubSquare />
             */}

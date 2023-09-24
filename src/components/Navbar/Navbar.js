@@ -8,27 +8,24 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [bars, setBars] = useState(false);
+
   const handleOnClick = () => {
-    // console.log("x is visible");
     setBars(!bars);
+    // console.log("Hlw")
   };
-const downloadButton = document.getElementById('downloadButton');
 
-//  if (downloadButton) {downloadButton.addEventListener('click', () => {
-//   const link = document.createElement('a');
-//   link.href = 'Archana-Resume.pdf';
-//   link.download = 'Archana_Resume.pdf';
-//   link.click();
-//   link.setAttribute('webkitdirectory', '');
-// });}
-  // const handleOChange = ()=>{
 
-  // }
+
   return (
     <div>
       <nav className="main_nav">
-        <div className="menu-link">
-          <ul>
+          <div className="bars" onClick={handleOnClick} >
+              <i className="fa fa-bars"></i> 
+          </div>
+        <div className={`menu-link ${bars?"show":""}`} id="nav-menu">
+        <div id="mobile">
+        </div>
+          <ul className={`side-nav-bar `}>
             <li>
               <a className="active" href='#Home'>
                 Home
@@ -50,7 +47,7 @@ const downloadButton = document.getElementById('downloadButton');
               <a href="#About">About</a>
             </li>
           </ul>
-        </div>
+
         <div className="resume">
           <button className="resume_button" id="downloadButton">
             <a href={myResume}>
@@ -59,19 +56,13 @@ const downloadButton = document.getElementById('downloadButton');
             </a>
             </button>
         </div>
-        <div id="mobile">
-          <div className="bars" onClick={handleOnClick}>
-            {bars ? (
-              <i className="fa fa-bars"></i>
-            ) : (
-              <i className="fa fa-times"></i>
-            )}
-          </div>
+
+        
         </div>
       </nav>
 
       </div>
-       
+      
   );
 };
 

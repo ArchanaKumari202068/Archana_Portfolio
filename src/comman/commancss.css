@@ -13,3 +13,14 @@
     margin-top: 100px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 767px) {
+    .profile-img{
+        height: 300px;
+        width: 380px;
+    }
+    .profile-img img {
+        align-items: center;
+        margin:-5em 2em 2em 2em;
+        margin-left: 2em;
+    }
+}

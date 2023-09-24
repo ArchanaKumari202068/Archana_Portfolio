@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+// import ProjectDetails from "./ProjectDetails";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,9 +15,16 @@ import "./styles.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const ProjectCards = (props) => {
+  // const project1 = {
+  //   aboutProject:
+  //     " ● Developed web UI/UX through Figma and designed prototypes . ● Used ReactJS for Frontend.● Worked with existing API’s to access necessary information from the backend. ● Collaborated with teammates and updated application versions using Git and Git.",
+  //   projectLink: "https://archana-stackoverflow.vercel.app/",
+  //   technologiesUsed: "Html,CSS,Js, React.js, Node.js,Express.js, MongoDB",
+  // };
+
   const { ref: myRef, inView: isMyElementInView } = useInView();
   const [showSlider, setShowSlider] = useState(false);
-  const [ProjectDetails,setProjectDetails] =useState(false)
+  // const [ProjectDetails, setProjectDetails] = useState(false);
   useEffect(() => {}, []);
 
   const handleLearnMore = (e) => {
@@ -25,7 +33,7 @@ const ProjectCards = (props) => {
 
   return (
     <div className="main_project_container" ref={myRef}>
-      <div className={`card-container'}`}>
+      <div className={`card-container`}>
         <div className="Card">
           <img src={props.imgsrc} className="Project_img" />
           <h2 className="Project_img_title">Project_Title</h2>
@@ -41,13 +49,14 @@ const ProjectCards = (props) => {
             <div className="project-slider-container">
               <div className="project-slider">
                 <span
+                  className="Close"
                   onClick={() => {
                     setShowSlider(false);
                   }}
                 >
                   Close
                 </span>
-              <Swiper
+                <Swiper
                   spaceBetween={30}
                   centeredSlides={true}
                   autoplay={{
@@ -62,54 +71,54 @@ const ProjectCards = (props) => {
                   className="mySwiper"
                 >
                   <div className="Slider_box">
-                    <SwiperSlide>Slide 1</SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
+                    {props.sliderImgs?.map((imgurl) => {
+                      return (
+                        <SwiperSlide>
+                          <img id="Project_img_slider" src={imgurl} />
+                        </SwiperSlide>
+                      );
+                    })}
+                    {/* <SwiperSlide>Slide 2</SwiperSlide>
                     <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
+                    <SwiperSlide>Slide 4</SwiperSlide> */}
                   </div>
                   {/* <p>about</p> */}
-                  
                 </Swiper>
-                {  (
-                  <div className="Project_details" >
-                  <table>
-                    <tr>
-                      <th>About Project</th>
-                    </tr>
-                 
-                  <tr>
-                    <td>
-                      ● Developed web UI/UX through Figma and designed
-                      prototypes .<br/> ● Used ReactJS for Frontend. <br/>● Worked with
-                      existing API’s to access necessary information from the
-                      backend. <br/>● Collaborated with teammates and updated
-                      application versions using Git and Git.
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Project Link</th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a>http://bytecodelearners.cuh.ac.in/</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Technologies Used</th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a>Html,CSS,Js, React.js, Node.js</a>
-                    </td>
-                  </tr>
-                  </table>
+                {
+                  <div className="Project_details">
                   
-                </div>
-             
 
-                )}
-                 </div>
-              
+                    <table>
+                      <tr>
+                        <th>About Project</th>
+                      </tr>
+
+                      <tr>
+                        <td>{props.aboutProject}
+                         
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Project Link</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                          <a href={props.projectLink}>
+                            {props.projectLink}
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Technologies Used</th>
+                      </tr>
+                      <tr>{props.technologiesUsed}</tr>
+                    </table>
+                    {/* Stackoverflow_clone */}
+
+                  </div>
+                }
+              </div>
             </div>
           ) : null}
         </div>
