@@ -22,7 +22,7 @@ const ProjectCards = (props) => {
   //   technologiesUsed: "Html,CSS,Js, React.js, Node.js,Express.js, MongoDB",
   // };
 
-  const { ref: myRef, inView: isMyElementInView } = useInView();
+ 
   const [showSlider, setShowSlider] = useState(false);
   // const [ProjectDetails, setProjectDetails] = useState(false);
   useEffect(() => {}, []);
@@ -35,7 +35,7 @@ const ProjectCards = (props) => {
     <div className="main_project_container" ref={myRef}>
       <div className={`card-container`}>
         <div className="Card">
-          <img src={props.imgsrc} className="Project_img" />
+          <img src={props.imgsrc} alt="Project_img" className="Project_img" />
           <h2 className="Project_img_title">Project_Title</h2>
         </div>
         <div className="Project-title">
@@ -74,7 +74,7 @@ const ProjectCards = (props) => {
                     {props.sliderImgs?.map((imgurl) => {
                       return (
                         <SwiperSlide>
-                          <img id="Project_img_slider" src={imgurl} />
+                          <img id="Project_img_slider" alt="Project_img_slider" src={imgurl} />
                         </SwiperSlide>
                       );
                     })}
