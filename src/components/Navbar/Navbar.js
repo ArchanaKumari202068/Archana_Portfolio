@@ -26,10 +26,8 @@ const Navbar = () => {
         <div className={`mobile`} >
         </div>
          
-          <ul >
           <i className="fa fa-multiply"></i> 
 
-          </ul>
           <ul >
             <li>
               <a className="active" href='#Home'>

@@ -8,7 +8,16 @@
 
 .menulink {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  gap: 4em;
+}
 
+.menulink ul {
+  margin: 0;
+  padding: 0;
 }
 
 .menulink li {
@@ -43,41 +52,50 @@
   left: 20px;
 }
 
+.resume {
+  margin-left: auto;
+}
+
 .resume .resume_button {
   /* display: flex;
   justify-content: right; */
 
   padding: 10px 20px;
-  margin: 0.5em 0.6em 0.5em 48em;
+  /* margin: 0.5em 0.6em 0.5em 48em; */
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
   background-color: #fff;
-  color: black;
+  color:#188a8d;
   /* background-color: #e9d7e9;
 background-image: linear-gradient(0deg, #e9d7e9 0%, #bae7e7 100%); */
-  background-color: #e9d7e9;
-  background-image: linear-gradient(0deg, #e9d7e9 0%, #bae7e7 100%);
+  
+  /* background-image: linear-gradient(0deg, #e9d7e9 0%, #bae7e7 100%); */
   border: none;
   cursor: pointer;
-
   transition: background-color 0.3s ease;
-
   box-shadow: inset 0px 5px 10px 0px rgba(102, 101, 101, 0.5);
 }
 
 .resume .resume_button:hover {
+  background-color: #188a8d;
+  color: #fff;
 
-  background-image: linear-gradient(90.1deg, rgba(84, 212, 228, 1) 0.2%, rgba(68, 36, 164, 1) 99.9%);
-
-  /* 
-    box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-    */
 
 }
+.resume .resume_button a{
+  outline-style: none;
+  text-decoration: none;
+  
+  color: #188a8d;
+}
 
+.resume .resume_button:hover a{
+  color: #fff;
+
+}
 #mobile i {
   color: #fff;
 
@@ -233,19 +251,23 @@ background-image: linear-gradient(0deg, #e9d7e9 0%, #bae7e7 100%); */
     /* padding: 2rem; */
     background-image: linear-gradient(109.6deg, rgb(214, 236, 237) 11.2%, rgb(200, 203, 202) 91.1%);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    color: rgb(56, 62, 107);
+    color: #188a8d;
     transition: .5s;
     z-index: 10;
     display: flex;
     flex-direction: column;
+    gap: 2em;
+    padding: 20px 10px;
 
   }
-  .mobile{
+
+  .mobile {
     display: none;
   }
+
   .menulink li a:hover,
   .menulink li a:active {
-    color: #2e2e61;
+    color: #188a8d;
   }
 
   .menulink ul.show {
@@ -261,19 +283,23 @@ background-image: linear-gradient(0deg, #e9d7e9 0%, #bae7e7 100%); */
     display: flex;
     justify-content: right;
     cursor: pointer;
-    color: wheat;
+    color: #fff;
     margin-left: auto;
     margin-right: 20px;
     margin-top: 20px;
   }
-  .bars i{
+
+  .bars i {
     text-align: right;
     height: 300px;
-   
+
     /* color: #02095a; */
   }
-  .fa{
+
+  .fa {
     font-size: 25px;
   }
-
+  .resume {
+    margin-left: 0;
+  }
 }

@@ -76,7 +76,7 @@ function Project() {
             href="https://archana-blog-site.vercel.app/"
             projectLink="https://archana-blog-site.vercel.app/"
             technologiesUsed="Html,CSS,Js, React.js, Node.js,Express.js, MongoDB"
-            title="Blog-Site"
+            title="Blog Site"
             imgsrc={Blog_Site_img1}
             sliderImgs={[
               Blog_Site_img1,
@@ -120,7 +120,7 @@ function Project() {
             href="https://github.com/ArchanaKumari202068/Weather_App"
             projectLink="https://github.com/ArchanaKumari202068/Weather_App"
             technologiesUsed="Html,CSS,Js, React.js, Node.js,Express.js, MongoDB"
-            title="Weather_App"
+            title="Weather App"
             imgsrc={weather_check_img}
             sliderImgs={[weather_check_img]}
           />
