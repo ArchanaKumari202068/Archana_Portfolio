@@ -6,20 +6,20 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-.menu-link {
+.menulink {
   display: flex;
 
 }
 
-.menu-link li {
+.menulink li {
   list-style: none;
   /* padding left & right */
-  padding: 0 20px;
+  /* padding: 0 20px; */
   position: relative;
 
 }
 
-.menu-link li a {
+.menulink li a {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 600;
@@ -27,13 +27,13 @@
   transition: 0.3s ease-in-out;
 }
 
-.menu-link li a:hover,
-.menu-link li a:active {
+.menulink li a:hover,
+.menulink li a:active {
   color: #0d0f0e;
 }
 
-.menu-link li a:hover::after,
-.menu-link li a:active::after {
+.menulink li a:hover::after,
+.menulink li a:active::after {
   content: '';
   width: 30%;
   height: 2px;
@@ -224,31 +224,31 @@ background-image: linear-gradient(0deg, #e9d7e9 0%, #bae7e7 100%); */
 
 
 @media screen and (max-width: 767px) {
-  .menu-link {
+  .menulink {
     position: fixed;
-    top: 10px;
+    top: 0px;
     right: -100%;
     width: 40%;
     height: 100%;
-    padding: 2rem;
+    /* padding: 2rem; */
     background-image: linear-gradient(109.6deg, rgb(214, 236, 237) 11.2%, rgb(200, 203, 202) 91.1%);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     color: rgb(56, 62, 107);
     transition: .5s;
     z-index: 10;
-
-
     display: flex;
     flex-direction: column;
 
   }
-
-  .menu-link li a:hover,
-  .menu-link li a:active {
+  .mobile{
+    display: none;
+  }
+  .menulink li a:hover,
+  .menulink li a:active {
     color: #2e2e61;
   }
 
-  .menu-link ul.show {
+  .menulink ul.show {
     display: block;
   }
 
@@ -262,12 +262,18 @@ background-image: linear-gradient(0deg, #e9d7e9 0%, #bae7e7 100%); */
     justify-content: right;
     cursor: pointer;
     color: wheat;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 20px;
   }
   .bars i{
     text-align: right;
     height: 300px;
    
     /* color: #02095a; */
+  }
+  .fa{
+    font-size: 25px;
   }
 
 }

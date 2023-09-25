@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [bars, setBars] = useState(false);
-
+  
   const handleOnClick = () => {
     setBars(!bars);
     // console.log("Hlw")
@@ -22,10 +22,15 @@ const Navbar = () => {
           <div className="bars" onClick={handleOnClick} >
               <i className="fa fa-bars"></i> 
           </div>
-        <div className={`menu-link ${bars?"show":""}`} id="nav-menu">
-        <div id="mobile">
+        <div className={`menulink ${bars ? "show":""}`} onClick={handleOnClick} id="nav-menu">
+        <div className={`mobile`} >
         </div>
-          <ul className={`side-nav-bar `}>
+         
+          <ul >
+          <i className="fa fa-multiply"></i> 
+
+          </ul>
+          <ul >
             <li>
               <a className="active" href='#Home'>
                 Home

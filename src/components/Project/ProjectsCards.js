@@ -36,7 +36,7 @@ const ProjectCards = (props) => {
       <div className={`card-container`}>
         <div className="Card">
           <img src={props.imgsrc} alt="Project_img" className="Project_img" />
-          <h2 className="Project_img_title">Project_Title</h2>
+          <h2 className="Project_img_title">{props.title}</h2>
         </div>
         <div className="Project-title">
           <h1>{props.title}</h1>
@@ -92,9 +92,15 @@ const ProjectCards = (props) => {
                       <tr>
                         <th>About Project</th>
                       </tr>
-
                       <tr>
-                        <td>{props.aboutProject}
+                        <td>
+
+                          <ul>
+                            
+                          {props?.aboutProject.map((text,idx)=>{
+                            return <li key={idx}>{text}</li>
+                          })}
+                          </ul>
                          
                         </td>
                       </tr>
@@ -112,7 +118,9 @@ const ProjectCards = (props) => {
                       <tr>
                         <th>Technologies Used</th>
                       </tr>
-                      <tr>{props.technologiesUsed}</tr>
+                      <tr>
+                        <td>{props.technologiesUsed}</td>
+                        </tr>
                     </table>
                     {/* Stackoverflow_clone */}
 
