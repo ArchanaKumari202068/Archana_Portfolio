@@ -51,6 +51,7 @@ function Project() {
               "Implemented user authentication, question posting, and answer functionalities using React for the frontend and Express.js for the backend.",
               " Utilized MongoDB for database management to store and retrieve user-generated questions and answers.",
               "Integrated responsive design and intuitive UI for seamless user experience in line with the original StackOverflow platform.",
+              " Hosted the frontend using Vercel and the backend using Render.",
             ]}
             href="https://archana-stackoverflow.vercel.app/"
             projectLink="https://archana-stackoverflow.vercel.app/"
