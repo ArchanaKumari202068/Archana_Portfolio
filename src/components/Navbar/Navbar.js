@@ -1,5 +1,5 @@
 import React from "react";
-import myResume from "../assest/Archana-Resume.pdf"
+import myResume from "../assest/Archana-Resume.pdf";
 // import {BsGlobe2,BsGraphUpArrow} from 'react-icons/bs'
 // import {FcPhoneAndroid} from 'react-icons/fc'
 
@@ -8,29 +8,30 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [bars, setBars] = useState(false);
-  
+
   const handleOnClick = () => {
     setBars(!bars);
     // console.log("Hlw")
   };
 
-
-
   return (
     <div>
       <nav className="main_nav">
-          <div className="bars" onClick={handleOnClick} >
-              <i className="fa fa-bars"></i> 
-          </div>
-        <div className={`menulink ${bars ? "show":""}`} onClick={handleOnClick} id="nav-menu">
-        <div className={`mobile`} >
+        <div className="bars" onClick={handleOnClick}>
+          <i className="fa fa-bars"></i>
         </div>
-         
-          <i className="fa fa-multiply"></i> 
+        <div
+          className={`menulink ${bars ? "show" : ""}`}
+          onClick={handleOnClick}
+          id="nav-menu"
+        >
+          <div className={`mobile`}></div>
 
-          <ul >
+          <i className="fa fa-multiply"></i>
+
+          <ul>
             <li>
-              <a className="active" href='#Home'>
+              <a className="active" href="#Home">
                 Home
               </a>
             </li>
@@ -51,21 +52,14 @@ const Navbar = () => {
             </li>
           </ul>
 
-        <div className="resume">
-          <button className="resume_button" id="downloadButton">
-            <a href={myResume}>
-
-            Resume
-            </a>
+          <div className="resume">
+            <button className="resume_button" id="downloadButton">
+              <a href={myResume}>Resume</a>
             </button>
-        </div>
-
-        
+          </div>
         </div>
       </nav>
-
-      </div>
-      
+    </div>
   );
 };
 

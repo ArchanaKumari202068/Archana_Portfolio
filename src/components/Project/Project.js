@@ -1,5 +1,14 @@
 import React from "react";
 import "./Project.css";
+import Shopping_site_img1 from "../assest/Shopping_site_img1.png";
+import Shopping_site_img2 from "../assest/Shopping_site_img2.png";
+import Shopping_site_img3 from "../assest/Shopping_site_img3.png";
+import Shopping_site_img4 from "../assest/Shopping_site_img4.png";
+import Shopping_site_img5 from "../assest/Shopping_site_img5.png";
+import Shopping_site_img6 from "../assest/Shopping_site_img6.png";
+import Shopping_site_img7 from "../assest/Shopping_site_img7.png";
+import Shopping_site_img8 from "../assest/Shopping_site_img8.png";
+import Shopping_site_img9 from "../assest/Shopping_site_img9.png";
 import Bytecode_learner_img from "../assest/Bytecode_learnerns_img1.png";
 import Bytecode_learner_img2 from "../assest/Bytecode_learnerns_img2.png";
 import Bytecode_learner_img3 from "../assest/Bytecode_learnerns_img3.png";
@@ -15,6 +24,7 @@ import Covid_Data_Analysis_img2 from "../assest/Covid_Data_Analysis_img2.png";
 import Covid_Data_Analysis_img3 from "../assest/Covid_Data_Analysis_img3.png";
 import Covid_Data_Analysis_img4 from "../assest/Covid_Data_Analysis_img4.png";
 import weather_check_img from "../assest/weather_check_img.png";
+
 // import ReactDOM from 'react-dom';
 import ProjectCards from "./ProjectsCards";
 
@@ -27,8 +37,34 @@ function Project() {
         </div>
         <div className="Cards">
           <ProjectCards
+          
             aboutProject={[
-              " Developed web UI/UX through Figma and designedprototypes.",
+              "Developed a full-fledged e-commerce website using the MERN stack, providing a seamless and responsive shopping experience.",
+              "mplemented dynamic product sorting (price, reviews) and a user- friendly shopping cart.             ",
+              "Added JWT authentication for user access. ",
+              "Hosted frontend on Vercel and backend on Render for optimal performance. ",
+            ]}
+            href="https://shopping-site-archana.vercel.app/"
+            projectLink="https://shopping-site-archana.vercel.app/"
+            technologiesUsed="Html,CSS,Js, React.js, Node.js,Express.js, MongoDB"
+            title="Shopping site"
+            imgsrc={Shopping_site_img3}
+            sliderImgs={[
+              Shopping_site_img1,
+              Shopping_site_img2,
+              Shopping_site_img3,
+              Shopping_site_img4,
+              Shopping_site_img5,
+              Shopping_site_img6,
+              Shopping_site_img7,
+              Shopping_site_img8,
+              Shopping_site_img9,
+              
+            ]}
+          />
+          <ProjectCards
+            aboutProject={[
+              "Developed web UI/UX through Figma and designedprototypes.",
               "Used ReactJS for Frontend.",
               "Worked with existing API’s to access necessary information from the backend. ",
               "Collaborated with teammates and updated application versions using Git and Git.",
