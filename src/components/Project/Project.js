@@ -24,7 +24,11 @@ import Covid_Data_Analysis_img2 from "../assest/Covid_Data_Analysis_img2.png";
 import Covid_Data_Analysis_img3 from "../assest/Covid_Data_Analysis_img3.png";
 import Covid_Data_Analysis_img4 from "../assest/Covid_Data_Analysis_img4.png";
 import weather_check_img from "../assest/weather_check_img.png";
-
+import Cloud_hustler_img1 from "../assest/Cloud_hustler-img1.jpg"
+import Cloud_hustler_img2 from "../assest/Cloud_hustler-img2.jpg"
+import Cloud_hustler_img3 from "../assest/Cloud_hustler-img3.jpg"
+import Cloud_hustler_img4 from "../assest/Cloud_hustler-img4.jpg"
+import Cloud_hustler_img5 from "../assest/Cloud_hustler-img5.jpg"
 // import ReactDOM from 'react-dom';
 import ProjectCards from "./ProjectsCards";
 
@@ -37,7 +41,6 @@ function Project() {
         </div>
         <div className="Cards">
           <ProjectCards
-          
             aboutProject={[
               "Developed a full-fledged e-commerce website using the MERN stack, providing a seamless and responsive shopping experience.",
               "mplemented dynamic product sorting (price, reviews) and a user- friendly shopping cart.             ",
@@ -59,9 +62,32 @@ function Project() {
               Shopping_site_img7,
               Shopping_site_img8,
               Shopping_site_img9,
-              
             ]}
           />
+
+          <ProjectCards
+            aboutProject={[
+              
+              "Developed an engaging community platform for cloud technology learners using MERN stack",
+              "Utilized React for the frontend, creating an attractive and responsive user interface and Firebase for backend.",
+              "Established a structured UI with React, incorporating folder organization for improved navigation.",
+              "Hosted frontend on Vercel and backend on Render for optimal performance. ",
+            ]}
+            href="https://cloud-hustlers.vercel.app/"
+            projectLink="https://cloud-hustlers.vercel.app/"
+            technologiesUsed="Html,CSS,Js, React.js, Node.js,Express.js, MongoDB"
+            title="Cloud Hustlers"
+            imgsrc={Cloud_hustler_img1}
+            sliderImgs={[
+              Cloud_hustler_img1,
+              Cloud_hustler_img2,
+              Cloud_hustler_img3,
+              Cloud_hustler_img4,
+              Cloud_hustler_img5,
+     
+            ]}
+          />
+
           <ProjectCards
             aboutProject={[
               "Developed web UI/UX through Figma and designedprototypes.",
@@ -132,7 +158,6 @@ function Project() {
               "Used Folium to display most affected areas.",
               "Used statistical techniques to understand the data.",
             ]}
-           
             href="https://github.com/ArchanaKumari202068/Covid_Data_Analysis"
             projectLink="https://github.com/ArchanaKumari202068/Covid_Data_Analysis"
             technologiesUsed="Python,Matplotlib,Numpy,Pandas,Folium"
@@ -151,9 +176,7 @@ function Project() {
               "Used Tkinter module with improved user experience",
               "Worked with JSON format to get required data from the response.",
               " Learned to make GUI applications using Tkinter",
-             
             ]}
-           
             href="https://github.com/ArchanaKumari202068/Weather_App"
             projectLink="https://github.com/ArchanaKumari202068/Weather_App"
             technologiesUsed="Html,CSS,Js, React.js, Node.js,Express.js, MongoDB"

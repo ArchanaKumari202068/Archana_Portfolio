@@ -1,5 +1,5 @@
 import React from "react";
-import myResume from "../assest/Archana-Resume.pdf";
+import myResume from "../assest/Archana_Resume.pdf";
 // import {BsGlobe2,BsGraphUpArrow} from 'react-icons/bs'
 // import {FcPhoneAndroid} from 'react-icons/fc'
 
